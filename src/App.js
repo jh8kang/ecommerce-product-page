@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Landing from "./screens/Landing";
+import "./style/_global.scss";
+import logo from "./assets/images/logo.svg";
+import cart from "./assets/images/icon-cart.svg";
+import profilePic from "./assets/images/image-avatar.png";
+import Navigation from "./components/Index";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} alt="logo" />
+        <Navigation />
+        <img src={cart} alt="cart" />
+        <img src={profilePic} alt="profilePic" className="profilePic" />
       </header>
+      <Landing />
     </div>
   );
 }

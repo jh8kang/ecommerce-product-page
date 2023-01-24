@@ -1,0 +1,10 @@
+@import "./style/global";
+
+.navigation-item {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+  }
+}

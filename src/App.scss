@@ -1,0 +1,36 @@
+@import "./style/global";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.profilePic {
+  width: 50px;
+  height: 50px;
+}
+
+.navigation-item {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+  }
+}

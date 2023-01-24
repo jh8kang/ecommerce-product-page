@@ -1,0 +1,11 @@
+@import "_fonts.scss";
+@import "./_mixins";
+@import "./variables";
+
+// Globa styles
+* {
+  font-family: "KumbhSans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
