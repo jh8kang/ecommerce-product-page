@@ -1,10 +1,16 @@
-@import "./style/global";
+@import "../style/global";
 
-.navigation-item {
-  @include mobile {
-    display: none;
-  }
-  @include desktop {
-    display: flex;
+.navigation {
+  display: flex;
+  &-item {
+    text-decoration: none;
+    color: $grey-text;
+    margin-right: 25px;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: flex;
+    }
   }
 }

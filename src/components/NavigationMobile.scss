@@ -1,0 +1,39 @@
+@import "../style//global";
+
+.nav-mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  position: absolute;
+  top: 0px;
+  &_white {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    padding: 5% 10%;
+  }
+  &_menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  &_item {
+    text-align: start;
+    text-decoration: none;
+    color: $black-text;
+    font-weight: 700;
+    font-size: 26px;
+    font-style: normal;
+    padding-bottom: 32px;
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.icon-close {
+  width: 14px;
+  height: 14px;
+}
