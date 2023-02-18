@@ -2,11 +2,16 @@ import React from "react";
 import "./NavigationMobile.scss";
 import iconClose from "../assets/images/icon-close.svg";
 
-function Navigation() {
+function Navigation({ mobileMenuClose }) {
   return (
     <div className="nav-mobile">
       <div className="nav-mobile_white">
-        <img src={iconClose} alt="side menu" className="icon-close" />
+        <img
+          src={iconClose}
+          alt="side menu"
+          className="icon-close"
+          onClick={mobileMenuClose}
+        />
         <div className="nav-mobile_menu">
           <a href="Collections" className="nav-mobile_item">
             Collections

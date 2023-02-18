@@ -15,7 +15,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 41px;
+  // padding-bottom: 41px;
+  padding: 0px 50px;
   &_left {
     display: flex;
     align-items: center;
@@ -31,8 +32,13 @@
     margin-right: 50px;
   }
   &_desktop {
-    padding: 41px 10%;
+    padding: 41px 20px;
     display: flex;
+  }
+  &_menu_icon {
+    @include tablet {
+      display: none;
+    }
   }
 }
 
